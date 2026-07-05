@@ -1,23 +1,21 @@
 # Progress log
 
-## 2026-07-05
+## 2026-07-05 — Phase 0: repository inspection and implementation plan
 
-Repository planning documents added:
+- Inspected `main`, repository history, README, `AGENTS.md`, and every existing document under `docs/`.
+- Confirmed the repository contained guidance only and no application code.
+- Accepted the documented pnpm/React/Fastify/SQLite/Drizzle/Playwright stack.
+- Verified Node.js 22 remains an LTS line and retained the repository-mandated Node.js 22.19 minimum.
+- Planned vertical phases: workspace foundation; deterministic domain/database; fixture workflow; review/scoring; isolated browser provider; hardening/documentation.
+- Preserved the local-only and non-circumvention boundaries.
 
-- `AGENTS.md`
-- `docs/BUILD_PROMPT.md`
-- `docs/PRODUCT_SPEC.md`
-- `docs/ARCHITECTURE.md`
-- `docs/POLICY_AND_PRIVACY.md`
-- `.gitignore`
+### Acceptance criteria
 
-The application has not been implemented yet.
+- Repository guidance and history read completely.
+- Stack and implementation order recorded.
+- Runtime/personal-data paths remain excluded from Git.
+- No source collection is performed during planning.
 
-Next work:
+### Next phase
 
-1. Initialise the TypeScript workspace.
-2. Add the local server and web interface.
-3. Add the database schema and migrations.
-4. Add deterministic fixtures and tests.
-5. Build the collection, review, scoring, and export workflows.
-6. Add the optional temporary browser provider last.
+Create the installable workspace, local health endpoint, basic dashboard, strict quality scripts, CI, secret-free environment template, and comprehensive runtime-data exclusions.
