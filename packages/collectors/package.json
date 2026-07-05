@@ -1,0 +1,13 @@
+{
+  "name": "@yt-game/collectors",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": {
+    "@yt-game/domain": "workspace:*",
+    "@yt-game/shared": "workspace:*",
+    "playwright": "^1.52.0",
+    "zod": "^3.24.3"
+  }
+}
